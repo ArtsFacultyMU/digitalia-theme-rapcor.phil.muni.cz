@@ -1,3 +1,47 @@
 body {
 	border-right: 2px solid red;
 }
+
+p {
+  margin-bottom: 1rem;
+}
+
+.field--type-entity-reference .field__label {
+  font-weight: bold;
+}
+ 
+.field--type-entity-reference {
+  margin: 0 0 0;
+}
+
+article.node--type-music-group.node--view-mode-full div.field.clearfix:after,
+article.node--type-music-item.node--view-mode-full div.field.clearfix:after {
+  display: block;
+  clear: left;
+} 
+
+
+article.node--type-music-group.node--view-mode-full div.view-digitalia-eva-interpret-chronological,
+article.node--type-music-item.node--view-mode-full div.view-digitalia-eva-album-tracklist {
+  clear: both;
+}
+
+
+article.node--type-music-group.node--view-mode-full div.view-digitalia-eva-interpret-image,
+article.node--type-music-item.node--view-mode-full div.view-digitalia-eva-album-cover {
+  float: right;
+}
+
+
+div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td:last-child {
+  display: flex;
+}
+
+
+
+div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td > div::before,
+div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td > div::after {
+  content: " ";
+  display: inline-block;
+}
+
