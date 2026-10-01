@@ -1,5 +1,5 @@
-body {
-	border-right: 2px solid red;
+.region-primary-menu ul.menu > li:nth-child(3) {
+  flex-grow: 2;
 }
 
 p {
@@ -35,7 +35,13 @@ article.node--type-music-item.node--view-mode-full div.view-digitalia-eva-album-
 
 div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td:last-child {
   display: flex;
+  flex-wrap: wrap;
 }
+
+div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td:last-child > div.data-field-music_item {
+  white-space: nowrap;
+}
+
 
 
 
@@ -43,5 +49,38 @@ div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td > d
 div.view-digitalia-search-songs > div.view-content > table > tbody > tr > td > div::after {
   content: " ";
   display: inline-block;
+}
+
+div.view-digitalia-place > div.view-content > ul > li.views_tree_parent.views_tree_collapsed {
+  margin-left: -1rem;
+}
+
+/* inlining Acquisition */
+#edit-field-acquisition-0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-status,
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-place,
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-subject,
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-verification
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-note {
+  flex-basis: 100%;
+}
+
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-date-day {
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-date-month {
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+#edit-field-acquisition-0 > div.form-item--field-acquisition-0-date-year {
+  width: 5rem;
+  margin-right: 2rem;
 }
 

@@ -1,0 +1,7 @@
+{% if item.first and item.second %}
+  {{ item.first }}:{{ "%02d"|format(item.second) }}
+{% elseif item.first %}
+  {{ item.first }}:00
+{% elseif item.second %}
+  00:{{ "%02d"|format(item.second) }} 
+{% endif %}
